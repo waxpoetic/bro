@@ -18,7 +18,7 @@ module Bro
 
     test 'responds with html' do
       assert_match(
-        'lib/templates/hello_world.erb',
+        'bot/templates/hello_world.erb',
         @command.send(:template_path).to_s
       )
       html = "<p>hello world</p>\n"
