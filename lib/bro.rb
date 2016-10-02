@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'active_support/all'
 require 'active_model'
-require 'sinatra'
+require 'sinatra/base'
 require 'logger'
 require 'bro/version'
 
@@ -12,6 +12,10 @@ module Bro
   autoload :Bot
   autoload :Message
   autoload :Command
+
+  autoload_under 'command' do
+    autoload :Generator
+  end
 
   USERNAME = ENV.fetch('BRO_USERNAME') { 'bro' }
   PASSWORD = ENV.fetch('BRO_PASSWORD') { 'test' }

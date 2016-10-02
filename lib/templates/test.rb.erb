@@ -1,0 +1,8 @@
+require 'test_helper'
+
+class <%= class_name %>Test < Bro::Command::Test
+  test 'responds to matched input' do
+    post '/', 'command' => 'test input'
+    assert_command @command
+  end
+end
