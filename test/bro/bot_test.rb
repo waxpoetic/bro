@@ -13,7 +13,7 @@ module Bro
     test 'shows command listing on get' do
       get '/'
       assert last_response.ok?, last_response.body
-      assert_match 'hello world', last_response.body
+      assert_match 'Hello world', last_response.body
     end
 
     test 'responds with command on post' do
