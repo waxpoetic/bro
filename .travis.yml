@@ -1,5 +1,7 @@
 sudo: false
 language: ruby
-rvm:
-  - 2.3.1
-before_install: gem install bundler -v 1.12.5
+rvm: 2.3.1
+cache: bundler
+before_install: gem install bundler
+install: ./bin/setup
+script: ./bin/rake

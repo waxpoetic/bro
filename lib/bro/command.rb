@@ -4,7 +4,7 @@ module Bro
   class Command
     extend ActiveModel::Naming
 
-    class_attribute :matcher
+    class_attribute :matcher, :description
 
     # @param :input [String] Full input text.
     def initialize(input: '')
@@ -38,8 +38,18 @@ module Bro
       nil
     end
 
+    # Add matcher for this command.
+    #
+    # @param regexp [RegExp]
     def self.matches(regexp)
       self.matcher = regexp
+    end
+
+    # Add description for this command.
+    #
+    # @param text [String]
+    def self.desc(text)
+      self.description = text
     end
 
     # Name of this command for use in filename paths.
@@ -68,7 +78,7 @@ module Bro
     # @private
     # @return [Pathname] File path to the ERB template.
     def template_path
-      Bro.root.join('lib', 'templates', "#{name}.erb")
+      Bro.root.join('bot', 'templates', "#{name}.erb")
     end
   end
 end

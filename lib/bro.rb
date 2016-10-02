@@ -12,10 +12,6 @@ module Bro
   autoload :Message
   autoload :Command
 
-  autoload_under 'commands' do
-    autoload :TicketSales
-  end
-
   USERNAME = ENV.fetch('BRO_USERNAME') { 'bro' }
   PASSWORD = ENV.fetch('BRO_PASSWORD') { 'test' }
 

@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>bro</title>
+  </head>
+  <body>
+    <header>
+      <h1>bro commands</h1>
+    </header>
+
+    <main>
+      <dl>
+        <% @commands.each do |command| %>
+          <dt><%= command.model_name.human_name %></dt>
+          <dd>
+            <p>Matches on "<%= command.matcher %>".</p>
+            <p><%= command.description %></p>
+          </dd>
+        <% end %>
+      </dl>
+    </main>
+
+    <footer>
+      <nav>
+        <a href="http://github.com/waxpoetic/bro">source code</a>
+        <a href="http://github.com/waxpoetic/bro/issues/new">report an issue</a>
+      </nav>
+    </footer>
+  </body>
+</html>
