@@ -15,7 +15,7 @@ Dir[Bro.root.join('bot', 'commands', '*.rb')].each do |command|
 end
 
 # Authenticate using HTTP Basic Auth
-use Rack::Auth::Basic.new do |username, password|
+use Rack::Auth::Basic do |username, password|
   username == Bro::USERNAME && password == Bro::PASSWORD
 end
 

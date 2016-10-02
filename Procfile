@@ -1,1 +1,1 @@
-bot: ./bin/puma -p $PORT -e $RACK_ENV
+bot: ./bin/puma -c bot/puma.rb
