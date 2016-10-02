@@ -9,6 +9,7 @@ Rake::TestTask.new :test do |t|
   t.test_files = FileList['test/**/*_test.rb']
 end
 
+desc 'Run lint checks'
 RuboCop::RakeTask.new :lint
 
-task default: :test
+task default: %i(test build)

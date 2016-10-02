@@ -1,3 +1,13 @@
 Lint/AmbiguousRegexpLiteral:
   Exclude:
-    - 'lib/bro/command/**/*.rb'
+    - 'bot/commands/**/*.rb'
+
+Style/RegexpLiteral:
+  Exclude:
+    - 'bot/commands/**/*.rb'
+    - 'test/test_helper.rb'
+
+Style/Documentation:
+  Exclude:
+    - 'test/**/*'
+    - 'bot/commands/**/*.rb'
