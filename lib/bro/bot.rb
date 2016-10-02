@@ -15,7 +15,7 @@ module Bro
       status 200
 
       if @command.present?
-        erb @command.name
+        erb @command.name.to_sym
       else
         body "Command '#{params['command']}' was not understood."
       end

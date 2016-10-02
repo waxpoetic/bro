@@ -10,7 +10,7 @@
     <main>
       <dl>
         <% @commands.each do |command| %>
-          <dt><%= command.model_name.human_name %></dt>
+          <dt><%= command.model_name.human %></dt>
           <dd>
             <p>Matches on "<%= command.matcher %>".</p>
             <p><%= command.description %></p>
