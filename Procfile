@@ -1,1 +1,1 @@
-bot: ./bin/puma -c bot/puma.rb
+bot: ./bin/puma -c config/puma.rb
