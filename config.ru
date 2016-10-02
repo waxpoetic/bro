@@ -1,4 +1,7 @@
 # frozen_string_literal: true
+#
+# Rackup file for the bot.
+
 $LOAD_PATH << File.expand_path('./lib', __dir__)
 
 require 'bundler/setup'
