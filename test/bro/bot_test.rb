@@ -17,9 +17,9 @@ module Bro
     end
 
     test 'responds with command on post' do
-      post '/commands', 'command' => 'hello world'
+      post '/commands', { command: 'what time is it' }.to_json
       assert last_response.ok?, last_response.body
-      assert_equal "<p>hello world</p>\n", last_response.body
+      assert_match 'The current time on the server is', last_response.body
     end
   end
 end
