@@ -14,9 +14,18 @@ module Bro
     end
 
     post '/commands' do
+      Bro.logger.info "Basecamp requested command response"
+      params = JSON.parse(request.body.read)
+      Bro.logger.info "Parameters: #{params}"
       @command = Command.find params['command']
       status 200
-      body @command.to_html
+
+      if @command.present?
+        Bro.logger.info "Responding with #{@command.name}"
+        body @command.to_html
+      else
+        body "Command '#{params['command']}' was not understood."
+      end
     end
   end
 end

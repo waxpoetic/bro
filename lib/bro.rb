@@ -39,6 +39,7 @@ module Bro
         level = severity =~ /info/i ? nil : "[#{severity.downcase}]"
         [progname, datetime, level, message].compact.join("\s") + "\n"
       end
+      log.level = Logger::DEBUG
     end
   end
 
@@ -51,5 +52,6 @@ module Bro
 end
 
 Dir[Bro.root.join('bot', 'commands', '*.rb')].each do |command|
+  Bro.logger.debug "Loading #{command}"
   require command
 end
