@@ -21,5 +21,12 @@ module Bro
       assert last_response.ok?, last_response.body
       assert_match 'The current time on the server is', last_response.body
     end
+
+    test 'sends message to campfire room' do
+      VCR.use_cassette :deliver_message do
+        post '/messages', '<p>Test from Bro::Bot</p>'
+        assert last_response.ok?
+      end
+    end
   end
 end
