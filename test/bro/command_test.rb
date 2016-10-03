@@ -24,8 +24,8 @@ module Bro
     end
 
     test 'sets matcher regex' do
-      Command.matches %r{test}
-      assert_equal %r{test}, Command.matcher
+      Command.matches(/test/)
+      assert_equal(/test/, Command.matcher)
     end
 
     test 'registers command upon being inherited' do

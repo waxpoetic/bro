@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'net/http'
 
 class TicketSales < Bro::Command
@@ -9,10 +10,10 @@ class TicketSales < Bro::Command
 
   def tickets
     @tickets ||= begin
-      Bro.logger.debug "Found #{tiers.count} ticket tiers"
-      tiers.sum do |tier|
-        tier['quantity_sold']
-      end
+       Bro.logger.debug "Found #{tiers.count} ticket tiers"
+       tiers.sum do |tier|
+         tier['quantity_sold']
+       end
      end
   end
 
@@ -25,9 +26,7 @@ class TicketSales < Bro::Command
   end
 
   def response
-    http.get "/v3/events/#{EVENTBRITE_EVENT_ID}/ticket_classes/", {
-      'Authorization' => "Bearer #{EVENTBRITE_ACCESS_TOKEN}"
-    }
+    http.get event_ticket_classes_path, headers
   end
 
   def body
@@ -38,5 +37,13 @@ class TicketSales < Bro::Command
 
   def tiers
     body['ticket_classes'] || []
+  end
+
+  def event_ticket_classes_path
+    "/v3/events/#{EVENTBRITE_EVENT_ID}/ticket_classes/"
+  end
+
+  def headers
+    { 'Authorization' => "Bearer #{EVENTBRITE_ACCESS_TOKEN}" }
   end
 end

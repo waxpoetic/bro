@@ -11,3 +11,7 @@ Style/Documentation:
   Exclude:
     - 'test/**/*'
     - 'bot/commands/**/*.rb'
+
+Lint/HandleExceptions:
+  Exclude:
+    - 'Rakefile'

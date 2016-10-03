@@ -30,7 +30,8 @@ module Bro
   # @return [String] Configured password for authentication.
   PASSWORD = ENV.fetch('BRO_PASSWORD') { 'test' }
 
-  DEBUG = !!ENV.fetch('BRO_DEBUG') { false }
+  # @return [Boolean] Whether to show debug log messages.
+  DEBUG = ENV.fetch('BRO_DEBUG') { false }
 
   # @return [String] Path to log file or +STDOUT+ by default.
   LOG_PATH = ENV.fetch('BRO_LOG_PATH') { STDOUT }
@@ -40,11 +41,11 @@ module Bro
   # @return [Logger]
   def self.logger
     @logger ||= Logger.new(LOG_PATH).tap do |log|
+      log.level = DEBUG ? Logger::DEBUG : Logger::INFO
       log.formatter = proc do |severity, _datetime, progname, message|
         level = severity =~ /info/i ? nil : severity.upcase
-        ["[bot]", level, progname, message].compact.join("\s") + "\n"
+        [level, progname, message].compact.join("\s") + "\n"
       end
-      log.level = DEBUG ? Logger::DEBUG : Logger::INFO
     end
   end
 
@@ -53,6 +54,11 @@ module Bro
   # @return [Pathname]
   def self.root
     @root ||= Pathname.new File.expand_path('../', __dir__)
+  end
+
+  def self.eager_load!
+    logger.info 'Starting chatbot...'
+    super
   end
 end
 
