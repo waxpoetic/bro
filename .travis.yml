@@ -3,5 +3,16 @@ language: ruby
 rvm: 2.3.1
 cache: bundler
 before_install: gem install bundler
-install: ./bin/setup
-script: ./bin/rake
+install: bin/setup
+script: bin/rake
+addons:
+  code_climate:
+    repo_token:
+      secure: IQkIWmj7xJ24ly5HaRlY5L+hCuIP9wAkywZ3isl61FuwHsk0u9nrom7yssJ3oFTfWPKzuNnHjWGfkestPd9/kp8zED2abOrOnNzQkhCb6sR+Y///ZsACDtyRqJ3KQnyDJD8JryeNwOUwlGPzR1UFkYUD2YBUPSjuTNpXLD/Hr2z2zZRGgD7j7dbArLvklxXaXCX/4Zw/NJ2Xcl/7vi9E//Mlo8KEIIOg+fR0BuUVrTEkxm8r0Z/rUc4LLhCWgYWwVQp4UjjZfdlKVM4gtBpN5XD/1ZcCmloE8K0q2U6Bw4MMvjGJSkZtDwMdwWrJomi4bmkxdPPv7D/8BohbcBUkfopThe9D8M1FqIcUXXGGN8bOHWXQrmq9JpmLO/4tDRVJOag5UhyvCuABM5qlWpv24xtR2v1Zt0vZqfS0g2OhXwUBp+8xwrQhWbjN29u8+oL7N1BHWzd0y4ckfc2k5A7eOW1T3M57zePZBBr2fvFhuME1BKRX3/GZjtgYmct21v5AMQYu57k3HGpWkKcesTqcgsSWNigVImn1oGUPb5hqTptnZF/SHfmDmAsoh/P9DhE3PwCWc9XESoB/1/oyeCbpg4M413J2e8EoEZFmjdMaY93BvwKIsZGY3xON7EhUGNCe71YrPGrXZXgtVq8uSo3cMTXDmmmrWSRgmy76s7RgEzo=
+deploy:
+  provider: heroku
+  api_key:
+    secure: Hxk+fO+FEN35oi6vHTw/0d/NT7x05B3mxAcoT9TPYCpe218geSeY02Dd03TsROYWrDxMOgcvL6luY/sOGj5uTRcSYVuizzORHgokKHNgMnc8R2iHylyWCcKEpLvyJrXRgbLJSwatGoYjnY8KR+96NhZ0vDxfWOZ2gqyOxRc0UlsVNSG+9LMN+w6gJLajBL1D1EuP/B64aAnn6sOaahAhWetmgqYYePdtdruh7KtjdJB9H3LLl0fveoLFt6dqYAxnuMBdDtISI7tKUg5A/06IPfjiHC5pCcNtx53d7BZJQNaTWoHpOGU90NoRc/Z2s38Im6wvVZR7UQdpr4RlcN5/AbwN1rbgW+6xyBp3QgYg6u69hH/8U7OVwOocN6x8siKqOli9K0v1sZYeb9lJ8L5XsGwYli3DNtaSiQdDp24ZTiew/ySUIplxZI5gNhyAQ17U5MOfm+ud5sPGMAMJKy1gReuifYgPkK/XyTvz9EtGvW3yhdZYSDzmCEBCRqETIh/O+IuJxi3p3rSElC4RjuZv2JCOx1uf0E8Y5RFm01SYhYdrInE2l3RQG62p0rY60OgeV4CF4aDSmv+gZlA9LmojgE6rJtYUJGzVob9y/NrEo7uXjPXqX7n+WcdJW4vb+z01qtKrA6q9pogKGgeN4SVCMYH2+Y92X2AEUCAsXYKVVEM=
+  app: brotherly-basecamp-bot
+  on:
+    repo: waxpoetic/bro

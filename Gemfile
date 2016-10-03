@@ -12,4 +12,5 @@ group :development do
   gem 'foreman', '~> 0'
   gem 'rubocop', '~> 0.4'
   gem 'rack-test', '~> 0.6'
+  gem 'codeclimate-test-reporter'
 end

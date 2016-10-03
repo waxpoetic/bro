@@ -4,6 +4,8 @@ require 'bro'
 
 require 'minitest/autorun'
 require 'minitest/pride'
+require 'codeclimate-test-reporter'
+CodeClimate::TestReporter.start
 
 class HelloWorld < Bro::Command
   matches %r{hello world}
