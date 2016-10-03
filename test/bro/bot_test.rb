@@ -17,8 +17,8 @@ module Bro
     end
 
     test 'responds with command on post' do
-      post '/', 'command' => 'hello world'
-      assert last_response.ok?
+      post '/commands', 'command' => 'hello world'
+      assert last_response.ok?, last_response.body
       assert_equal "<p>hello world</p>\n", last_response.body
     end
   end

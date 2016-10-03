@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'bundler/gem_tasks'
+require_relative './config/bot'
 require 'rake/testtask'
 require 'rubocop/rake_task'
 require 'bro/command/generator'
