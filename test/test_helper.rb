@@ -4,7 +4,7 @@ $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 # Fake credentials
 ENV['BRO_LOG_PATH'] = '/dev/null'
 ENV['BASECAMP_CHAT_LINE'] = 'https://3.basecamp.com/X/integrations/X/buckets/X/chats/X/lines'
-# ENV['EVENTBRITE_ACCESS_TOKEN'] = 'XXXXXXXXXXXXXXXXXXXX'
+ENV['EVENTBRITE_ACCESS_TOKEN'] = 'XXXXXXXXXXXXXXXXXXXX'
 
 require 'bro'
 
