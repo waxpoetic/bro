@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+
+ENV['BRO_LOG_PATH'] = '/dev/null'
+
 require 'bro'
 
 require 'minitest/autorun'

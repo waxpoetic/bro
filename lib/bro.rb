@@ -32,11 +32,14 @@ module Bro
 
   DEBUG = !!ENV.fetch('BRO_DEBUG') { false }
 
+  # @return [String] Path to log file or +STDOUT+ by default.
+  LOG_PATH = ENV.fetch('BRO_LOG_PATH') { STDOUT }
+
   # Global logger object for the entire bot runtime.
   #
   # @return [Logger]
   def self.logger
-    @logger ||= Logger.new(STDOUT).tap do |log|
+    @logger ||= Logger.new(LOG_PATH).tap do |log|
       log.formatter = proc do |severity, _datetime, progname, message|
         level = severity =~ /info/i ? nil : severity.upcase
         ["[bot]", level, progname, message].compact.join("\s") + "\n"

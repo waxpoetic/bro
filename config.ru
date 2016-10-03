@@ -9,8 +9,6 @@ require 'rack/auth/basic'
 # Eager-load the Bro codebase
 Bro.eager_load!
 
-Bro.logger.info 'Starting Bro...'
-
 # Authenticate using HTTP Basic Auth
 use Rack::Auth::Basic do |username, password|
   username == Bro::USERNAME && password == Bro::PASSWORD

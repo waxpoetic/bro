@@ -14,6 +14,22 @@ module Bro
 
     test 'finds command by input' do
       assert_equal 'hello_world', Command.find(@input).name
+      assert_equal @input, Command.find(@input).instance_variable_get('@input')
+      assert_nil Command.find('not a command')
+    end
+
+    test 'describes command' do
+      Command.desc 'description'
+      assert_equal 'description', Command.description
+    end
+
+    test 'sets matcher regex' do
+      Command.matches %r{test}
+      assert_equal %r{test}, Command.matcher
+    end
+
+    test 'registers command upon being inherited' do
+      assert Command.all.include?(HelloWorld), Command.all
     end
 
     test 'responds with html' do
