@@ -1,5 +1,10 @@
 # bro
 
+[![Build Status](https://travis-ci.org/waxpoetic/bro.svg?branch=master)](https://travis-ci.org/waxpoetic/bro)
+[![Code Climate](https://codeclimate.com/github/waxpoetic/bro/badges/gpa.svg)](https://codeclimate.com/github/waxpoetic/bro)
+[![Test Coverage](https://codeclimate.com/github/waxpoetic/bro/badges/coverage.svg)](https://codeclimate.com/github/waxpoetic/bro/coverage)
+[![Issue Count](https://codeclimate.com/github/waxpoetic/bro/badges/issue_count.svg)](https://codeclimate.com/github/waxpoetic/bro)
+
 brother.ly's basecamp chatbot.
 
 ## Installation
