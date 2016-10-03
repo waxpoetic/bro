@@ -1,5 +1,7 @@
+# frozen_string_literal: true
 module Bro
   class Command
+    # Generate new commands with a Rake task.
     class Generator
       def initialize(name)
         @name = name

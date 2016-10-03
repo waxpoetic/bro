@@ -15,7 +15,7 @@ RuboCop::RakeTask.new :lint
 
 desc 'Generate command with NAME="name_of_file"'
 task :command do
-  name = ENV['NAME'] || raise("Must define name of command")
+  name = ENV['NAME'] || raise('Must define name of command')
   Bro::Command::Generator.create name
   puts "Generated command '#{name}'"
 end
