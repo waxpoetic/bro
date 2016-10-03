@@ -1,0 +1,451 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer XXXXXXXXXXXXXXXXXXXX
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 03 Oct 2016 05:03:03 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '689'
+      Connection:
+      - keep-alive
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept, Accept-Encoding
+      X-Rate-Limit:
+      - token:XXXXXXXXXXXXXXXXXXXX 6/1000 reset=156s, key:5RMIAKJGVWRHGTIESW 6/1000
+        reset=156s
+      Allow:
+      - GET, POST, HEAD, OPTIONS
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Ua-Compatible:
+      - IE=edge
+      Set-Cookie:
+      - AN=; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+      - G=v%3D2%26i%3D185ea82d-cfd3-4e6b-a1d1-90818b0fbc0a%26a%3D7bd%26s%3Dcd1d4e87325c7785b4d8f27f5f57723ae5d34a7d;
+        Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017 05:03:03 GMT; httponly;
+        Path=/
+      - SP=AGQgbbnFgtfiEEXY26-kDVv3xyPubGOdhQA27j4xnbr4tDGZqgCmk8MxMUmLYwl6IXOY_xmfqIoW8HjM1aJZlaBWimwNr3UmVqD9XSPezWwmFQvvqeWzpEepsFNfa0J-lmXznObOwTvjcNlydJg1VUfuRuNBxqjlD5c31fW2BLXMhc8SCs3UVmLRzKxhM0_AMxJXSBGnZP-kmlW_sj2RNPKVk8jniz0pQkkMxkrqKZB9aPJChp-saTs;
+        Domain=.eventbriteapi.com; httponly; Path=/
+      - SS=AE3DLHTvcznlsnmF70UP32w-yoJiJsBSOQ; Domain=.eventbriteapi.com; httponly;
+        Path=/; secure
+      - ebEventToTrack=; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+      - eblang=lo%3Den_US%26la%3Den-us; Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017
+        05:03:03 GMT; httponly; Path=/
+      - mgref=typeins; Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017 05:03:03
+        GMT; Max-Age=31536000; Path=/
+      - mgrefby=; Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017 05:03:03 GMT;
+        Max-Age=31536000; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"object_count": 3, "page_number": 1, "page_size": 50,
+        "page_count": 1}, "ticket_classes": [{"actual_cost": {"display": "$20.00",
+        "currency": "USD", "value": 2000, "major_value": "20.00"}, "actual_fee": {"display":
+        "$2.09", "currency": "USD", "value": 209, "major_value": "2.09"}, "cost":
+        {"display": "$20.00", "currency": "USD", "value": 2000, "major_value": "20.00"},
+        "fee": {"display": "$2.09", "currency": "USD", "value": 209, "major_value":
+        "2.09"}, "tax": {"display": "$0.00", "currency": "USD", "value": 0, "major_value":
+        "0.00"}, "resource_uri": "https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/55451777/",
+        "name": "Special Operative Clearance (Early Bird)", "description": null, "donation":
+        false, "free": false, "minimum_quantity": 1, "maximum_quantity": null, "maximum_quantity_per_order":
+        10, "on_sale_status": "AVAILABLE", "quantity_total": 50, "quantity_sold":
+        12, "sales_start": "2016-09-27T22:50:00Z", "sales_end": "2016-10-09T05:00:00Z",
+        "hidden": false, "include_fee": false, "split_fee": false, "hide_description":
+        true, "auto_hide": false, "variants": [], "has_pdf_ticket": true, "sales_channels":
+        ["online", "atd"], "event_id": "28155205979", "id": "55451777"}, {"actual_cost":
+        {"display": "$25.00", "currency": "USD", "value": 2500, "major_value": "25.00"},
+        "actual_fee": {"display": "$2.37", "currency": "USD", "value": 237, "major_value":
+        "2.37"}, "cost": {"display": "$25.00", "currency": "USD", "value": 2500, "major_value":
+        "25.00"}, "fee": {"display": "$2.37", "currency": "USD", "value": 237, "major_value":
+        "2.37"}, "tax": {"display": "$0.00", "currency": "USD", "value": 0, "major_value":
+        "0.00"}, "resource_uri": "https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/55451778/",
+        "name": "Level 1 Security Clearance", "description": null, "donation": false,
+        "free": false, "minimum_quantity": 1, "maximum_quantity": null, "maximum_quantity_per_order":
+        10, "on_sale_status": "NOT_YET_ON_SALE", "quantity_total": 100, "quantity_sold":
+        0, "sales_start": "2016-10-09T05:00:00Z", "sales_end": "2016-10-23T05:00:00Z",
+        "hidden": false, "include_fee": false, "split_fee": false, "hide_description":
+        true, "auto_hide": true, "variants": [], "has_pdf_ticket": true, "sales_channels":
+        ["online", "atd"], "event_id": "28155205979", "id": "55451778"}, {"actual_cost":
+        {"display": "$30.00", "currency": "USD", "value": 3000, "major_value": "30.00"},
+        "actual_fee": {"display": "$2.64", "currency": "USD", "value": 264, "major_value":
+        "2.64"}, "cost": {"display": "$30.00", "currency": "USD", "value": 3000, "major_value":
+        "30.00"}, "fee": {"display": "$2.64", "currency": "USD", "value": 264, "major_value":
+        "2.64"}, "tax": {"display": "$0.00", "currency": "USD", "value": 0, "major_value":
+        "0.00"}, "resource_uri": "https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/55451779/",
+        "name": "Level 2 Security Clearance", "description": null, "donation": false,
+        "free": false, "minimum_quantity": 1, "maximum_quantity": null, "maximum_quantity_per_order":
+        10, "on_sale_status": "NOT_YET_ON_SALE", "quantity_total": 150, "quantity_sold":
+        0, "sales_start": "2016-10-23T22:50:00Z", "sales_end": "2016-10-29T16:00:00Z",
+        "hidden": false, "include_fee": false, "split_fee": false, "hide_description":
+        true, "auto_hide": true, "variants": [], "has_pdf_ticket": true, "sales_channels":
+        ["online", "atd"], "event_id": "28155205979", "id": "55451779"}]}'
+    http_version: 
+  recorded_at: Mon, 03 Oct 2016 05:03:03 GMT
+- request:
+    method: get
+    uri: https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer XXXXXXXXXXXXXXXXXXXX
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 03 Oct 2016 05:03:04 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '689'
+      Connection:
+      - keep-alive
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept, Accept-Encoding
+      X-Rate-Limit:
+      - token:XXXXXXXXXXXXXXXXXXXX 7/1000 reset=156s, key:5RMIAKJGVWRHGTIESW 7/1000
+        reset=156s
+      Allow:
+      - GET, POST, HEAD, OPTIONS
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Ua-Compatible:
+      - IE=edge
+      Set-Cookie:
+      - AN=; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+      - G=v%3D2%26i%3Dda41c671-3159-441f-9932-bcc7b5187b69%26a%3D7bd%26s%3Dd74fb1834fd42ca6fb3ad65e5d818f704c39453b;
+        Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017 05:03:04 GMT; httponly;
+        Path=/
+      - SP=AGQgbblNrJ0PkENRt48ZgOFfIgUl-3wKEe7W3JwZy_L6jHF-vKH8osMoAjJLaZOW3eAWJm-0adXY1MUmFxteItEB75M3LxzEswpWIjSKZ3mDczBNt3vCDka542i_oFAUQViL2NyD4_DswVY7EpnadoV9MDyoQNMQPrOzyxFEu5YKdBnsqExc3du6i4wJvRYgTy17UTIFImGewBqeZIIOnWiLgSvx6dkXw23g5pRmewecY8vQU-TeHKY;
+        Domain=.eventbriteapi.com; httponly; Path=/
+      - SS=AE3DLHTldugzIjzjEi_iSkpJLsri8BOx9Q; Domain=.eventbriteapi.com; httponly;
+        Path=/; secure
+      - ebEventToTrack=; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+      - eblang=lo%3Den_US%26la%3Den-us; Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017
+        05:03:04 GMT; httponly; Path=/
+      - mgref=typeins; Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017 05:03:04
+        GMT; Max-Age=31536000; Path=/
+      - mgrefby=; Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017 05:03:04 GMT;
+        Max-Age=31536000; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"object_count": 3, "page_number": 1, "page_size": 50,
+        "page_count": 1}, "ticket_classes": [{"actual_cost": {"display": "$20.00",
+        "currency": "USD", "value": 2000, "major_value": "20.00"}, "actual_fee": {"display":
+        "$2.09", "currency": "USD", "value": 209, "major_value": "2.09"}, "cost":
+        {"display": "$20.00", "currency": "USD", "value": 2000, "major_value": "20.00"},
+        "fee": {"display": "$2.09", "currency": "USD", "value": 209, "major_value":
+        "2.09"}, "tax": {"display": "$0.00", "currency": "USD", "value": 0, "major_value":
+        "0.00"}, "resource_uri": "https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/55451777/",
+        "name": "Special Operative Clearance (Early Bird)", "description": null, "donation":
+        false, "free": false, "minimum_quantity": 1, "maximum_quantity": null, "maximum_quantity_per_order":
+        10, "on_sale_status": "AVAILABLE", "quantity_total": 50, "quantity_sold":
+        12, "sales_start": "2016-09-27T22:50:00Z", "sales_end": "2016-10-09T05:00:00Z",
+        "hidden": false, "include_fee": false, "split_fee": false, "hide_description":
+        true, "auto_hide": false, "variants": [], "has_pdf_ticket": true, "sales_channels":
+        ["online", "atd"], "event_id": "28155205979", "id": "55451777"}, {"actual_cost":
+        {"display": "$25.00", "currency": "USD", "value": 2500, "major_value": "25.00"},
+        "actual_fee": {"display": "$2.37", "currency": "USD", "value": 237, "major_value":
+        "2.37"}, "cost": {"display": "$25.00", "currency": "USD", "value": 2500, "major_value":
+        "25.00"}, "fee": {"display": "$2.37", "currency": "USD", "value": 237, "major_value":
+        "2.37"}, "tax": {"display": "$0.00", "currency": "USD", "value": 0, "major_value":
+        "0.00"}, "resource_uri": "https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/55451778/",
+        "name": "Level 1 Security Clearance", "description": null, "donation": false,
+        "free": false, "minimum_quantity": 1, "maximum_quantity": null, "maximum_quantity_per_order":
+        10, "on_sale_status": "NOT_YET_ON_SALE", "quantity_total": 100, "quantity_sold":
+        0, "sales_start": "2016-10-09T05:00:00Z", "sales_end": "2016-10-23T05:00:00Z",
+        "hidden": false, "include_fee": false, "split_fee": false, "hide_description":
+        true, "auto_hide": true, "variants": [], "has_pdf_ticket": true, "sales_channels":
+        ["online", "atd"], "event_id": "28155205979", "id": "55451778"}, {"actual_cost":
+        {"display": "$30.00", "currency": "USD", "value": 3000, "major_value": "30.00"},
+        "actual_fee": {"display": "$2.64", "currency": "USD", "value": 264, "major_value":
+        "2.64"}, "cost": {"display": "$30.00", "currency": "USD", "value": 3000, "major_value":
+        "30.00"}, "fee": {"display": "$2.64", "currency": "USD", "value": 264, "major_value":
+        "2.64"}, "tax": {"display": "$0.00", "currency": "USD", "value": 0, "major_value":
+        "0.00"}, "resource_uri": "https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/55451779/",
+        "name": "Level 2 Security Clearance", "description": null, "donation": false,
+        "free": false, "minimum_quantity": 1, "maximum_quantity": null, "maximum_quantity_per_order":
+        10, "on_sale_status": "NOT_YET_ON_SALE", "quantity_total": 150, "quantity_sold":
+        0, "sales_start": "2016-10-23T22:50:00Z", "sales_end": "2016-10-29T16:00:00Z",
+        "hidden": false, "include_fee": false, "split_fee": false, "hide_description":
+        true, "auto_hide": true, "variants": [], "has_pdf_ticket": true, "sales_channels":
+        ["online", "atd"], "event_id": "28155205979", "id": "55451779"}]}'
+    http_version: 
+  recorded_at: Mon, 03 Oct 2016 05:03:04 GMT
+- request:
+    method: get
+    uri: https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer XXXXXXXXXXXXXXXXXXXX
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 03 Oct 2016 05:03:04 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '689'
+      Connection:
+      - keep-alive
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept, Accept-Encoding
+      X-Rate-Limit:
+      - token:XXXXXXXXXXXXXXXXXXXX 8/1000 reset=155s, key:5RMIAKJGVWRHGTIESW 8/1000
+        reset=155s
+      Allow:
+      - GET, POST, HEAD, OPTIONS
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Ua-Compatible:
+      - IE=edge
+      Set-Cookie:
+      - AN=; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+      - G=v%3D2%26i%3D3d59e8eb-f0b6-4a91-9602-8cd15c4eb834%26a%3D7bd%26s%3Def9276eab7eacc3b938fd02cad63228825a6ac0e;
+        Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017 05:03:04 GMT; httponly;
+        Path=/
+      - SP=AGQgbbmUCdvYba2koASI894-iHCEZPhR5pEJC-CgXZeDmcVjAXA3f6-cY1LCDQdM_Ci09_UAK_qdsprWVcEytPWONyQo2NDxmHdArkftLkv8I4DIpcbkGZ3htxBTz0og9w_hnOfBAF5lGTJ8Gn7Y6ngHYhb2EihyQsfMC6VbWEzhnaJmGNWpL7jcykS2eQEoK3y3WiSrEfhe2HxXAGgdF_3wM9ZXPp-8JasmcbXG2G4vYp5hLqCFGVE;
+        Domain=.eventbriteapi.com; httponly; Path=/
+      - SS=AE3DLHTmXHety_Z0uZsNG1HEhSxsyVYVSA; Domain=.eventbriteapi.com; httponly;
+        Path=/; secure
+      - ebEventToTrack=; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+      - eblang=lo%3Den_US%26la%3Den-us; Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017
+        05:03:04 GMT; httponly; Path=/
+      - mgref=typeins; Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017 05:03:04
+        GMT; Max-Age=31536000; Path=/
+      - mgrefby=; Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017 05:03:04 GMT;
+        Max-Age=31536000; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"object_count": 3, "page_number": 1, "page_size": 50,
+        "page_count": 1}, "ticket_classes": [{"actual_cost": {"display": "$20.00",
+        "currency": "USD", "value": 2000, "major_value": "20.00"}, "actual_fee": {"display":
+        "$2.09", "currency": "USD", "value": 209, "major_value": "2.09"}, "cost":
+        {"display": "$20.00", "currency": "USD", "value": 2000, "major_value": "20.00"},
+        "fee": {"display": "$2.09", "currency": "USD", "value": 209, "major_value":
+        "2.09"}, "tax": {"display": "$0.00", "currency": "USD", "value": 0, "major_value":
+        "0.00"}, "resource_uri": "https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/55451777/",
+        "name": "Special Operative Clearance (Early Bird)", "description": null, "donation":
+        false, "free": false, "minimum_quantity": 1, "maximum_quantity": null, "maximum_quantity_per_order":
+        10, "on_sale_status": "AVAILABLE", "quantity_total": 50, "quantity_sold":
+        12, "sales_start": "2016-09-27T22:50:00Z", "sales_end": "2016-10-09T05:00:00Z",
+        "hidden": false, "include_fee": false, "split_fee": false, "hide_description":
+        true, "auto_hide": false, "variants": [], "has_pdf_ticket": true, "sales_channels":
+        ["online", "atd"], "event_id": "28155205979", "id": "55451777"}, {"actual_cost":
+        {"display": "$25.00", "currency": "USD", "value": 2500, "major_value": "25.00"},
+        "actual_fee": {"display": "$2.37", "currency": "USD", "value": 237, "major_value":
+        "2.37"}, "cost": {"display": "$25.00", "currency": "USD", "value": 2500, "major_value":
+        "25.00"}, "fee": {"display": "$2.37", "currency": "USD", "value": 237, "major_value":
+        "2.37"}, "tax": {"display": "$0.00", "currency": "USD", "value": 0, "major_value":
+        "0.00"}, "resource_uri": "https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/55451778/",
+        "name": "Level 1 Security Clearance", "description": null, "donation": false,
+        "free": false, "minimum_quantity": 1, "maximum_quantity": null, "maximum_quantity_per_order":
+        10, "on_sale_status": "NOT_YET_ON_SALE", "quantity_total": 100, "quantity_sold":
+        0, "sales_start": "2016-10-09T05:00:00Z", "sales_end": "2016-10-23T05:00:00Z",
+        "hidden": false, "include_fee": false, "split_fee": false, "hide_description":
+        true, "auto_hide": true, "variants": [], "has_pdf_ticket": true, "sales_channels":
+        ["online", "atd"], "event_id": "28155205979", "id": "55451778"}, {"actual_cost":
+        {"display": "$30.00", "currency": "USD", "value": 3000, "major_value": "30.00"},
+        "actual_fee": {"display": "$2.64", "currency": "USD", "value": 264, "major_value":
+        "2.64"}, "cost": {"display": "$30.00", "currency": "USD", "value": 3000, "major_value":
+        "30.00"}, "fee": {"display": "$2.64", "currency": "USD", "value": 264, "major_value":
+        "2.64"}, "tax": {"display": "$0.00", "currency": "USD", "value": 0, "major_value":
+        "0.00"}, "resource_uri": "https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/55451779/",
+        "name": "Level 2 Security Clearance", "description": null, "donation": false,
+        "free": false, "minimum_quantity": 1, "maximum_quantity": null, "maximum_quantity_per_order":
+        10, "on_sale_status": "NOT_YET_ON_SALE", "quantity_total": 150, "quantity_sold":
+        0, "sales_start": "2016-10-23T22:50:00Z", "sales_end": "2016-10-29T16:00:00Z",
+        "hidden": false, "include_fee": false, "split_fee": false, "hide_description":
+        true, "auto_hide": true, "variants": [], "has_pdf_ticket": true, "sales_channels":
+        ["online", "atd"], "event_id": "28155205979", "id": "55451779"}]}'
+    http_version: 
+  recorded_at: Mon, 03 Oct 2016 05:03:04 GMT
+- request:
+    method: get
+    uri: https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer XXXXXXXXXXXXXXXXXXXX
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 03 Oct 2016 05:03:04 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '689'
+      Connection:
+      - keep-alive
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept, Accept-Encoding
+      X-Rate-Limit:
+      - token:XXXXXXXXXXXXXXXXXXXX 9/1000 reset=155s, key:5RMIAKJGVWRHGTIESW 9/1000
+        reset=155s
+      Allow:
+      - GET, POST, HEAD, OPTIONS
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Ua-Compatible:
+      - IE=edge
+      Set-Cookie:
+      - AN=; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+      - G=v%3D2%26i%3D033ef65b-1a57-4e9e-9109-e5b6bfb8b265%26a%3D7bd%26s%3De2d014d62b210de984d38ce8ae77a8f1e15b5570;
+        Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017 05:03:04 GMT; httponly;
+        Path=/
+      - SP=AGQgbbkebvv4Kdb9XwvWJ_1w4wyhDLAFShYtAenKRnbcBGswYPOICXs3LlfEuOS3pC1qwoJx30hqYTqqf0LemdNZMoWJ7jQi-vlkf1z70GQM1J8SLnY4dhP1ZmOQDBOd9govEk1XqHN9PZaIi4l5dd-xwnVYyAisNZ5fVdnBmMt6wpomokhU_UAsU_Ww-2gKuoWkrwM04PO-6Y84oFeEm9Rpao9yB707tTws3_aLX7W8VYZJ9MJ9XVc;
+        Domain=.eventbriteapi.com; httponly; Path=/
+      - SS=AE3DLHSqSp_b1C_UvdIXtjivmhI5h6oKhw; Domain=.eventbriteapi.com; httponly;
+        Path=/; secure
+      - ebEventToTrack=; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+      - eblang=lo%3Den_US%26la%3Den-us; Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017
+        05:03:04 GMT; httponly; Path=/
+      - mgref=typeins; Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017 05:03:04
+        GMT; Max-Age=31536000; Path=/
+      - mgrefby=; Domain=.eventbriteapi.com; expires=Tue, 03-Oct-2017 05:03:04 GMT;
+        Max-Age=31536000; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"object_count": 3, "page_number": 1, "page_size": 50,
+        "page_count": 1}, "ticket_classes": [{"actual_cost": {"display": "$20.00",
+        "currency": "USD", "value": 2000, "major_value": "20.00"}, "actual_fee": {"display":
+        "$2.09", "currency": "USD", "value": 209, "major_value": "2.09"}, "cost":
+        {"display": "$20.00", "currency": "USD", "value": 2000, "major_value": "20.00"},
+        "fee": {"display": "$2.09", "currency": "USD", "value": 209, "major_value":
+        "2.09"}, "tax": {"display": "$0.00", "currency": "USD", "value": 0, "major_value":
+        "0.00"}, "resource_uri": "https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/55451777/",
+        "name": "Special Operative Clearance (Early Bird)", "description": null, "donation":
+        false, "free": false, "minimum_quantity": 1, "maximum_quantity": null, "maximum_quantity_per_order":
+        10, "on_sale_status": "AVAILABLE", "quantity_total": 50, "quantity_sold":
+        12, "sales_start": "2016-09-27T22:50:00Z", "sales_end": "2016-10-09T05:00:00Z",
+        "hidden": false, "include_fee": false, "split_fee": false, "hide_description":
+        true, "auto_hide": false, "variants": [], "has_pdf_ticket": true, "sales_channels":
+        ["online", "atd"], "event_id": "28155205979", "id": "55451777"}, {"actual_cost":
+        {"display": "$25.00", "currency": "USD", "value": 2500, "major_value": "25.00"},
+        "actual_fee": {"display": "$2.37", "currency": "USD", "value": 237, "major_value":
+        "2.37"}, "cost": {"display": "$25.00", "currency": "USD", "value": 2500, "major_value":
+        "25.00"}, "fee": {"display": "$2.37", "currency": "USD", "value": 237, "major_value":
+        "2.37"}, "tax": {"display": "$0.00", "currency": "USD", "value": 0, "major_value":
+        "0.00"}, "resource_uri": "https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/55451778/",
+        "name": "Level 1 Security Clearance", "description": null, "donation": false,
+        "free": false, "minimum_quantity": 1, "maximum_quantity": null, "maximum_quantity_per_order":
+        10, "on_sale_status": "NOT_YET_ON_SALE", "quantity_total": 100, "quantity_sold":
+        0, "sales_start": "2016-10-09T05:00:00Z", "sales_end": "2016-10-23T05:00:00Z",
+        "hidden": false, "include_fee": false, "split_fee": false, "hide_description":
+        true, "auto_hide": true, "variants": [], "has_pdf_ticket": true, "sales_channels":
+        ["online", "atd"], "event_id": "28155205979", "id": "55451778"}, {"actual_cost":
+        {"display": "$30.00", "currency": "USD", "value": 3000, "major_value": "30.00"},
+        "actual_fee": {"display": "$2.64", "currency": "USD", "value": 264, "major_value":
+        "2.64"}, "cost": {"display": "$30.00", "currency": "USD", "value": 3000, "major_value":
+        "30.00"}, "fee": {"display": "$2.64", "currency": "USD", "value": 264, "major_value":
+        "2.64"}, "tax": {"display": "$0.00", "currency": "USD", "value": 0, "major_value":
+        "0.00"}, "resource_uri": "https://www.eventbriteapi.com/v3/events/28155205979/ticket_classes/55451779/",
+        "name": "Level 2 Security Clearance", "description": null, "donation": false,
+        "free": false, "minimum_quantity": 1, "maximum_quantity": null, "maximum_quantity_per_order":
+        10, "on_sale_status": "NOT_YET_ON_SALE", "quantity_total": 150, "quantity_sold":
+        0, "sales_start": "2016-10-23T22:50:00Z", "sales_end": "2016-10-29T16:00:00Z",
+        "hidden": false, "include_fee": false, "split_fee": false, "hide_description":
+        true, "auto_hide": true, "variants": [], "has_pdf_ticket": true, "sales_channels":
+        ["online", "atd"], "event_id": "28155205979", "id": "55451779"}]}'
+    http_version: 
+  recorded_at: Mon, 03 Oct 2016 05:03:04 GMT
+recorded_with: VCR 3.0.3

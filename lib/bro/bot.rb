@@ -49,5 +49,10 @@ module Bro
         body "Command '#{json_params[:command]}' was not understood."
       end
     end
+
+    post '/messages' do
+      @message = Message.create content: request.body.read
+      status 200
+    end
   end
 end

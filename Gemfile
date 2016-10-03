@@ -15,4 +15,6 @@ group :development do
   gem 'rack-test', '~> 0.6'
   gem 'codeclimate-test-reporter'
   gem 'pry-byebug'
+  gem 'vcr'
+  gem 'webmock'
 end

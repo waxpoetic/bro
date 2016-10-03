@@ -19,6 +19,7 @@ module Bro
 
   autoload :Bot
   autoload :Command
+  autoload :Message
 
   autoload_under 'command' do
     autoload :Generator

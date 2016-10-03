@@ -1,0 +1,147 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://3.basecamp.com/X/integrations/X/buckets/X/chats/X/lines
+    body:
+      encoding: US-ASCII
+      string: content=%3Cp%3ESent+from+Bro+v0.1.0.%3C%2Fp%3E
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - 3.basecamp.com
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 03 Oct 2016 04:52:59 GMT
+      Content-Type:
+      - text/html
+      Connection:
+      - Keep-Alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Accept-Ch:
+      - DPR,Width,Viewport-Width,Downlink,Save-Data
+      Public-Key-Pins-Report-Only:
+      - max-age=3600; includeSubdomains; pin-sha256="6X0iNAQtPIjXKEVcqZBwyMcRwq1yW60549axatu3oDE=";
+        pin-sha256="Uu5hqMmQleSn68vgjrmAQIz2tFLJ3ra/RLK7zEgYYms="; pin-sha256="Slt48iBVTjuRQJTjbzopminRrHSGtndY0/sj0lFf9Qk=";
+        pin-sha256="LCa0a2j/xo/5m0U8HTBBNBNCLXBkg7+g+YpeiGJm564="; report-uri="https://zapier.com/hooks/catch/3b7uh7/"
+      Set-Cookie:
+      - X-Request-Id=163dff65-79a9-470f-b9e8-4185ad7b97df; expires=Mon, 03 Oct 2016
+        04:53:09 -0000; secure
+      - X-Runtime=0.156541; expires=Mon, 03 Oct 2016 04:53:09 -0000; secure
+      - _mkra_ctxt=fd45268b4698b3c2c56c1d968abec344--201; path=/; max-age=5; HttpOnly;
+        secure
+      - force-primary-dc=true;Max-Age=5;Path=/;Version=1;
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 163dff65-79a9-470f-b9e8-4185ad7b97df
+      X-Runtime:
+      - '0.156541'
+      X-Request-Path:
+      - "/X/integrations/X/buckets/X/chats/X/lines"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Queue-Time:
+      - '0.0007355213165283203'
+      Timing-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '23'
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Mon, 03 Oct 2016 04:52:59 GMT
+- request:
+    method: post
+    uri: https://3.basecamp.com/X/integrations/X/buckets/X/chats/X/lines
+    body:
+      encoding: US-ASCII
+      string: content=Another+message
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - 3.basecamp.com
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 03 Oct 2016 04:52:59 GMT
+      Content-Type:
+      - text/html
+      Connection:
+      - Keep-Alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Accept-Ch:
+      - DPR,Width,Viewport-Width,Downlink,Save-Data
+      Public-Key-Pins-Report-Only:
+      - max-age=3600; includeSubdomains; pin-sha256="6X0iNAQtPIjXKEVcqZBwyMcRwq1yW60549axatu3oDE=";
+        pin-sha256="Uu5hqMmQleSn68vgjrmAQIz2tFLJ3ra/RLK7zEgYYms="; pin-sha256="Slt48iBVTjuRQJTjbzopminRrHSGtndY0/sj0lFf9Qk=";
+        pin-sha256="LCa0a2j/xo/5m0U8HTBBNBNCLXBkg7+g+YpeiGJm564="; report-uri="https://zapier.com/hooks/catch/3b7uh7/"
+      Set-Cookie:
+      - X-Request-Id=b125e338-5004-43cd-801d-91b781ccbb4b; expires=Mon, 03 Oct 2016
+        04:53:09 -0000; secure
+      - X-Runtime=0.110556; expires=Mon, 03 Oct 2016 04:53:09 -0000; secure
+      - _mkra_ctxt=64e17121e98343e58c65d9f0dded7ad8--201; path=/; max-age=5; HttpOnly;
+        secure
+      - force-primary-dc=true;Max-Age=5;Path=/;Version=1;
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - b125e338-5004-43cd-801d-91b781ccbb4b
+      X-Runtime:
+      - '0.110556'
+      X-Request-Path:
+      - "/X/integrations/X/buckets/X/chats/X/lines"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Queue-Time:
+      - '0.0006325244903564453'
+      Timing-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '23'
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Mon, 03 Oct 2016 04:52:59 GMT
+recorded_with: VCR 3.0.3
