@@ -20,4 +20,4 @@ task :command do
   puts "Generated command '#{name}'"
 end
 
-task default: %i(test build)
+task default: :test
