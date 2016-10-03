@@ -49,3 +49,7 @@ module Bro
     @root ||= Pathname.new File.expand_path('../', __dir__)
   end
 end
+
+Dir[Bro.root.join('bot', 'commands', '*.rb')].each do |command|
+  require command
+end
