@@ -30,16 +30,18 @@ module Bro
   # @return [String] Configured password for authentication.
   PASSWORD = ENV.fetch('BRO_PASSWORD') { 'test' }
 
+  DEBUG = !!ENV.fetch('BRO_DEBUG') { false }
+
   # Global logger object for the entire bot runtime.
   #
   # @return [Logger]
   def self.logger
     @logger ||= Logger.new(STDOUT).tap do |log|
-      log.formatter = proc do |severity, datetime, progname, message|
-        level = severity =~ /info/i ? nil : "[#{severity.downcase}]"
-        [progname, datetime, level, message].compact.join("\s") + "\n"
+      log.formatter = proc do |severity, _datetime, progname, message|
+        level = severity =~ /info/i ? nil : severity.upcase
+        ["[bot]", level, progname, message].compact.join("\s") + "\n"
       end
-      log.level = Logger::DEBUG
+      log.level = DEBUG ? Logger::DEBUG : Logger::INFO
     end
   end
 

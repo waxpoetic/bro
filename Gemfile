@@ -14,4 +14,5 @@ group :development do
   gem 'rubocop', '~> 0.4'
   gem 'rack-test', '~> 0.6'
   gem 'codeclimate-test-reporter'
+  gem 'pry-byebug'
 end

@@ -1,0 +1,7 @@
+<p>
+  <% if tickets.present? %>
+    We have sold <strong><%= tickets %></strong> tickets so far.
+  <% else %>
+    There was an error contacting Eventbrite.
+  <% end %>
+</p>
