@@ -5,6 +5,10 @@ cache: bundler
 before_install: gem install bundler
 install: bin/setup
 script: bin/rake
+env:
+  - BASECAMP_CHAT_LINE=https://3.basecamp.com/X/integrations/X/buckets/X/chats/X/lines
+  - EVENTBRITE_EVENT_ID=X
+  - EVENTBRITE_ACCESS_TOKEN=XXXXXXXXXXXXXXXXXXXX
 addons:
   code_climate:
     repo_token:
